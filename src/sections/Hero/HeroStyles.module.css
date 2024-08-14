@@ -24,6 +24,7 @@
 
       img {
         width: 40px;
+        transition:all .5s ease;
       }
       img:hover{
         transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
@@ -60,16 +61,25 @@
 }
 .colorModeContainer {
   position: relative;
+  
+}
+
+.colorModeDiv{
+  animation: shake 4s infinite;
 }
 .colorMode {
   position: absolute;
-  right: 5;
+  right: 5px;
   width: 25px;
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  transition:all .5s ease;
 }
+
 .colorMode:hover {
+  animation-play-state:paused;
   cursor: pointer;
+  animation: boxShadowTransform 200ms ease-in-out;
   transform: scale(1.6);
+  
 }
 .description {
   max-width: 24ch;
@@ -100,5 +110,31 @@
     max-width: 400px;
     width: 400px;
     }
+  }
+}
+
+@keyframes shake {
+  0%, 100%, 65%, 54%{
+    transform: translateX(0);
+  }
+  55%, 60% {
+    transform: translateX(-3px);
+  }
+  57.5%, 62.5% {
+    transform: translateX(6px);
+  }
+}
+@keyframes boxShadowTransform {
+  0% {
+    box-shadow: none;
+    transform: none;
+  }
+  50% {
+    box-shadow: none;
+    transform: scale(1.6);
+  }
+  100% {
+    box-shadow: none;
+    transform: scale(1.6);
   }
 }

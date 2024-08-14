@@ -23,13 +23,15 @@ function Hero() {
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
+        <div className={styles.colorModeDiv}>
+          <img
+            className={styles.colorMode}
+            src={ThemeIcon}
+            alt="day&night icon"
+            onClick={toggleTheme}
+          />
+        </div>
         <img className={styles.hero} src={heroImg} alt="profile picture" />
-        <img
-          className={styles.colorMode}
-          src={ThemeIcon}
-          alt="day&night icon"
-          onClick={toggleTheme}
-        />
       </div>
       <div className={styles.info}>
         <h1>
