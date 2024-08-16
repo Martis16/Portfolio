@@ -63,12 +63,14 @@
 }
 .colorModeContainer {
   position: relative;
-  
 }
 
 .colorModeDiv{
   animation: shake 4s infinite;
-  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
 }
 .colorMode {
   position: absolute;
