@@ -80,7 +80,6 @@
 .colorMode:hover {
   animation-play-state:paused;
   cursor: pointer;
-  animation: boxShadowTransform 200ms ease-in-out;
   transform: scale(1.6);
   
 }
@@ -127,17 +126,5 @@
     transform: translateX(6px);
   }
 }
-@keyframes boxShadowTransform {
-  0% {
-    box-shadow: none;
-    transform: none;
-  }
-  50% {
-    box-shadow: none;
-    transform: scale(1.6);
-  }
-  100% {
-    box-shadow: none;
-    transform: scale(1.6);
-  }
-}
+
+
