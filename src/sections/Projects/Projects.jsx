@@ -5,13 +5,15 @@ import ElderHealthIcon from "../../assets/LogoHD.png";
 import ProjectsCard from "../../common/ProjectCard";
 import DeathTraffic from "../../assets/deathtraffic.jpg";
 import railsFriends from "../../assets/2.png";
+import Auto321 from '../../assets/321autoImage.png';
+import VintedHomework from '../../assets/Vinted_logo.png';
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
 
-      <h3 className=""> Solo projects </h3>
+      <h3 className=""> Recent Solo projects </h3>
 
       <div className={styles.projectsContainer}>
         <ProjectsCard
@@ -22,10 +24,16 @@ function Projects() {
         />
 
         <ProjectsCard
-          src={railsFriends}
-          link="https://github.com/Martis16/Ruby_project"
-          h3="FriendsPage"
-          p="A website to do CRUD operations on your friend list"
+          src={Auto321}
+          link="https://321auto.lt"
+          h3="321auto"
+          p="A website for a small car dealership"
+        />
+        <ProjectsCard
+          src={VintedHomework}
+          link="https://github.com/Martis16/VintedHomeWork"
+          h3="Vinted's homework"
+          p="A module for calculating shipment's discounts"
         />
       </div>
 

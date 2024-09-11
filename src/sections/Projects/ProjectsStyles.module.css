@@ -1,31 +1,5 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
-
-    img {
-        max-width: 250px;
-        align-self: center;
-        background-color: var(--project-card-gb);
-        border-radius: 20px;
-    }
-
-    a{
-        width: fit-content;
-        text-decoration: none;
-        color: #fff;
-        transition: transform 200ms ease-in-out;
-    }
-    a:hover{
-        transform: scale(1.05);
-    }
-
-
-}
-
-.projectsContainer{
-    
+/* Projects Card Container */
+.projectsContainer {
     margin-top: 50px;
     margin-bottom: 100px;
     gap: 30px;
@@ -33,20 +7,59 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    a{
-        width: 250px;
-    }
-    
-    
 }
 
-@media(width >= 800px){
-    .projectsContainer{
+/* Responsive styles */
+@media (min-width: 800px) {
+    .projectsContainer {
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-evenly;
         padding: 0 30px;
+        align-items: center;
+        justify-content: center;
     }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container img {
+    max-width: 250px;
+    align-self: center;
+    background-color: var(--project-card-gb);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+.container a {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    text-decoration: none;
+    transition: transform 200ms ease-in-out;
+    text-align: center;
+    align-items: center;
+    
+}
+.container a div{
+    background-color: #fff;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.container a:hover {
+    transform: scale(1.05);
 }
